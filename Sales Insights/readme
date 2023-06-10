@@ -1,4 +1,10 @@
-In this project performed India based AtliQ hardware company sales insights - A Data Analysis project. Developed ETL mappings using SQL to extract the data from unstructured data and transformed it to the staging area to conduct data cleaning and design star schema data model on Power BI. Developed a Power BI dashboard to perform analysis, producing quantitative visualizations in Power BI to draw valuable insights based on different parameters affecting the company performance year on year and further provide business solutions. by using such tools and technology one can make data driven decisions which helps to increase the sales of the company. So, in this project we will help a company make its own sales related dashboard using Power BI.
+In this project performed India based AtliQ hardware company sales insights - A Data Analysis project. 
+Developed ETL mappings using SQL to extract the data from unstructured data and transformed it to 
+the staging area to conduct data cleaning and design star schema data model on Power BI. 
+Developed a Power BI dashboard to perform analysis, producing quantitative visualizations in Power BI 
+to draw valuable insights based on different parameters affecting the company performance year on year 
+and further provide business solutions. by using such tools and technology one can make data driven decisions 
+which helps to increase the sales of the company. So, in this project we will help a company make its own sales related dashboard using Power BI.
 
 Project planning with AIMS Grid and Data Discovery:
 AIMS Grid -is a project management tool and it has four component-
@@ -19,7 +25,9 @@ Analysis of data base by running different SQL statement. find out the all analy
 
 Data Cleaning and ETL :
 
-we will pull data into Power BI and also do Data Cleaning known as ETL(Extract Transform and Load). We need to transform data as it is messy and need to convert into different format so that we can perform Data Analysis in Power BI. Transformed data which will launch data into power query editor where we will do data cleaning converting data into correct format 
+we will pull data into Power BI and also do Data Cleaning known as ETL(Extract Transform and Load). 
+We need to transform data as it is messy and need to convert into different format so that we can perform Data Analysis in Power BI. 
+Transformed data which will launch data into power query editor where we will do data cleaning converting data into correct format 
 
 Data Analysis Expressions (DAX) :
 
