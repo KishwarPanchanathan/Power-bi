@@ -17,7 +17,6 @@
 ## 🏗️ ETL Architecture
 ### ETL Process Overview
 This section outlines the ETL pipeline used to extract data from the SQL Server database, apply necessary transformations, and load it into Power BI for analysis.
-* ETL Diagram
   ![Bike Share Architecutre](https://github.com/user-attachments/assets/31b9288f-cc43-4c9d-8f2f-58821fe2eb9f)
 
 
