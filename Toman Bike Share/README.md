@@ -1,5 +1,5 @@
 # 🚴‍♂️ Toman Bike Share Data Analysis
-## This project focuses on analyzing the Toman Bike Share service's data using SQL and Power BI. The goal is to provide business insights into the service's revenue performance, profitability, rider demographics, and usage patterns across different seasons, months, and hours of the day.
+### This project focuses on analyzing the Toman Bike Share service's data using SQL and Power BI. The goal is to provide business insights into the service's revenue performance, profitability, rider demographics, and usage patterns across different seasons, months, and hours of the day.
 
 ## 📋 Project Overview
 ###  The Toman Bike Share Data Analysis project aims to help business stakeholders identify key trends and opportunities for improving bike-share operations. By analyzing data from 2021 and 2022, we can provide actionable insights, such as:
