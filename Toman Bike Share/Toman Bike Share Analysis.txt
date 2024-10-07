@@ -1,0 +1,81 @@
+-- Toman Bike Share Analysis
+SELECT * 
+FROM bike;
+
+-- 1) what is the overall riders count?
+SELECT SUM(riders) AS total_count
+FROM bike;
+
+-- 2) what is the overall Revenue ?
+
+SELECT SUM(revenue) AS total_revenue
+FROM bike;
+
+-- 3) what is the overall Profit ?
+
+SELECT SUM(profit) AS total_profit
+FROM bike;
+
+-- 4) what is the overall Profit Percentage ?
+
+SELECT 100 * (SUM(profit) / SUM(revenue)) AS profit_percentage
+FROM bike;
+
+-- 5) what is the revenue and profit by month ?
+
+SELECT MONTH(dteday) AS month_no, SUM(revenue) AS revenue, SUM(profit) AS profit
+FROM bike
+GROUP BY MONTH(dteday)
+ORDER BY month_no
+
+-- 6) what is count of riders by riders type ?
+
+SELECT rider_type, SUM(riders) AS total
+FROM bike
+GROUP BY rider_type
+
+-- 7) what is count of riders by hour ?
+
+SELECT hr, SUM(riders) AS total
+FROM bike
+GROUP BY hr
+ORDER BY hr
+
+-- 8) what is Avg Revenue, Avg Profit by Season ?
+
+SELECT season, AVG(revenue) AS avg_revenue, AVG(profit) AS avg_profit
+FROM bike
+GROUP BY season
+ORDER BY season;
+
+-- 9) what is YoY growth of riders ?
+-- 0 = 2021 , 1 = 2022
+
+SELECT yr, SUM(riders) curr_count, LAG(SUM(riders), 1) OVER(ORDER BY yr) pre_count,
+CASE
+	WHEN LAG(SUM(riders), 1) OVER(ORDER BY yr) IS NULL THEN NULL
+	ELSE (SUM(riders) - LAG(SUM(riders), 1) OVER(ORDER BY yr))* 100.0 / LAG(SUM(riders), 1) OVER(ORDER BY yr)
+END AS YOY
+FROM BIKE
+GROUP BY yr
+
+-- 10) what is YoY growth of revenue ?
+
+SELECT yr, SUM(revenue) curr_count, LAG(SUM(revenue), 1) OVER(ORDER BY yr) pre_count,
+CASE
+	WHEN LAG(SUM(revenue), 1) OVER(ORDER BY yr) IS NULL THEN NULL
+	ELSE (SUM(revenue) - LAG(SUM(revenue), 1) OVER(ORDER BY yr))* 100.0 / LAG(SUM(revenue), 1) OVER(ORDER BY yr)
+END AS YOY
+FROM BIKE
+GROUP BY yr
+
+
+-- 11) what is YoY growth of profit ?
+
+SELECT yr, SUM(profit) curr_count, LAG(SUM(profit), 1) OVER(ORDER BY yr) pre_count,
+CASE
+	WHEN LAG(SUM(profit), 1) OVER(ORDER BY yr) IS NULL THEN NULL
+	ELSE (SUM(profit) - LAG(SUM(profit), 1) OVER(ORDER BY yr))* 100.0 / LAG(SUM(profit), 1) OVER(ORDER BY yr)
+END AS YOY
+FROM BIKE
+GROUP BY yr
