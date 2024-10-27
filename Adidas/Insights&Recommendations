@@ -1,28 +1,54 @@
-#Insights
-## Sales Overview
-Strong YoY Growth: Sales and profit have seen impressive growth with 394.23% and 424.07% YoY increases, respectively, from 2020 to 2021, suggesting effective strategies during this period.
-Sales Channel Distribution: In-store sales lead with $357 million, followed by outlet sales at $296 million, and online sales at $248 million. Although online sales are third, this channel is typically more scalable and cost-effective, suggesting potential for further growth.
-Top Retailers: West Gear, Foot Locker, and Sports Direct are the highest-performing retailers, with combined sales of $645 million, indicating strong partnerships.
-Regional Performance: New York, California, and Florida are top states by sales, with the West region also showing a higher average order value of $50.3, potentially signaling a concentration of high-value customers.
-Customer Segmentation: Men have a slightly higher average order value ($46.1) than women ($44), but female customers have a higher total sales contribution ($486 million vs. $414 million), indicating greater purchase frequency or volume among female customers.
-Product Analysis
-Product Performance: Street footwear leads in both sales and profit, followed by apparel and athletic footwear. This suggests a high demand and profitability for street footwear, potentially influenced by fashion trends and consumer preferences.
-Customer Preference by Gender: With male sales at $414 million and female sales at $486 million, both segments have strong engagement, with women contributing more overall. However, male customers may present an opportunity for upselling or targeted marketing, given their higher average order value.
-High Demand for Street Footwear: Street footwear’s dominance in units sold, profit, and revenue highlights a strong market fit and demand, suggesting this product category should be prioritized in marketing efforts.
-Trend Analysis
-Seasonal Demand: July, August, and December are peak months for sales and profit, indicating a seasonal demand pattern. These months likely correspond to summer and holiday shopping, which could guide seasonal marketing and inventory strategies.
-# Recommendations
-### 1. Increase Focus on Online Sales
-Given the scalability of online channels, consider investing in targeted digital marketing campaigns and user-friendly website improvements to boost online sales further. This can balance the sales distribution and leverage the convenience factor for customers.
-### 2. Strengthen Partnerships with Top Retailers
-With West Gear, Foot Locker, and Sports Direct leading sales, explore opportunities for exclusive promotions, increased inventory, or co-marketing efforts with these retailers to drive even higher sales.
-### 3. Leverage Seasonal Trends for Campaigns
-Use insights from peak months to plan seasonal campaigns and inventory stock. July, August, and December could benefit from more aggressive promotions, potentially around summer sales and holiday shopping to maximize sales and profitability during these high-demand periods.
-### 4. Expand Street Footwear and Apparel Categories
-Given the strong performance of street footwear, consider expanding this line with new designs, limited editions, or regional styles. Apparel, as the second-highest category, could also benefit from strategic development to increase sales further.
-### 5. Target Regional High-Value Customers in the West
-Since the West region has the highest average order value, tailor premium offerings, or exclusive product lines to this region. Emphasize this in marketing communications to drive high-value sales.
-### 6. Increase Targeted Marketing for Female Customers
-With female customers contributing the most to sales, prioritize marketing strategies aimed at this segment, perhaps focusing on preferred product lines like street footwear and apparel, which have shown high engagement and profitability.
-### 7. Monitor Gender-Based Average Order Value for Upselling Opportunities
-With men showing a higher average order value, implement upselling strategies in targeted campaigns, especially around products like street footwear where demand is already high.
+Adidas Sales Analysis
+📄 Project Overview
+This project provides a comprehensive sales analysis for Adidas from January 2020 to December 2021. The primary goals are to identify sales trends, product performance, and customer behavior across different regions and channels. Insights derived from this analysis inform strategic recommendations aimed at optimizing Adidas’ sales performance and profitability.
+
+📊 Key Analyses
+Sales Overview: Review of overall sales, profit, average order value, and regional and channel-based performance.
+Product Analysis: In-depth look at product performance across categories like street footwear, apparel, and athletic footwear.
+Trend Analysis: Identification of seasonal demand trends to assist in forecasting and planning.
+📂 Data Description
+Data Sources
+The project uses the following tables:
+
+Sales Table: Contains transaction data including invoice date, sales method, retailer, gender, and metrics such as total sales, operating margin, units sold, and profit.
+Product Image Table: Links product names to image URLs.
+Region Table: Maps locations to cities, states, and regions for detailed geographic analysis.
+Columns
+Sales Table
+gender: Customer gender
+invoice date: Date of purchase
+location key: Identifier for the location
+operating margin/profit: Financial performance metrics
+price per unit: Unit price of products
+product: Product name
+retailer/retailer ID: Retailer identifiers
+sales method: Method of sale (e.g., in-store, online)
+total sales/units sold: Sales and units sold metrics
+Product Image Table
+image URL: Link to product image
+product: Product name
+Region Table
+city, location key, region, state: Geographic identifiers
+Time Period
+Analysis is based on data from 01-01-2020 to 31-12-2021.
+🛠️ Methodology
+Data Cleaning and Transformation: Clean and join data tables based on keys like location key and product.
+Metric Calculations:
+Year-over-Year (YoY) and Month-over-Month (MoM) changes in sales, profit, units sold, and transactions.
+Average order value and operating margin.
+Visualizations: Created in Power BI across three dashboard pages—Sales Overview, Product Analysis, and Trend Analysis.
+📈 Dashboard Structure
+Sales Overview: KPIs for total sales, profit, and average order value, plus breakdowns by region, channel, and retailer.
+Product Analysis: Visuals on sales and profit by product, product sales trends, and customer demographics.
+Trend Analysis: MoM and YoY trend charts for sales and profit, with seasonal demand insights.
+💡 Insights & Recommendations
+Online Sales Opportunity: Further growth potential in the online channel, where scalability offers high potential ROI.
+Regional High-Value Customers: The West region has the highest average order values, presenting an opportunity for targeted, high-value marketing.
+Product Demand: Street footwear is the top performer, meriting continued investment and potential expansion in this category.
+🖥️ How to Use
+Prerequisites: Power BI Desktop to view and interact with the report.
+Loading the Data:
+Ensure that all tables (Sales, Product Image, and Region) are correctly linked using location key and product.
+Exploring the Dashboard:
+Use slicers and filters to drill down into regions, products, and time periods for detailed insights.
+Interpreting Results: Refer to the KPI cards, charts, and visuals to explore key trends and insights highlighted in each page of the dashboard.
