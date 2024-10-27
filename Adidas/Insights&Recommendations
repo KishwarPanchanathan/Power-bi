@@ -1,20 +1,38 @@
-#Adidas Sales Analysis
-📄 Project Overview
+
+# Adidas Sales Analysis
+📄 *Project Overview*
+
 This project provides a comprehensive sales analysis for Adidas from January 2020 to December 2021. The primary goals are to identify sales trends, product performance, and customer behavior across different regions and channels. Insights derived from this analysis inform strategic recommendations aimed at optimizing Adidas’ sales performance and profitability.
 
-📊 Key Analyses
-Sales Overview: Review of overall sales, profit, average order value, and regional and channel-based performance.
-Product Analysis: In-depth look at product performance across categories like street footwear, apparel, and athletic footwear.
-Trend Analysis: Identification of seasonal demand trends to assist in forecasting and planning.
-📂 Data Description
+📊 *Key Analyses*
+
+Sales Overview: 
+    
+Review of overall sales, profit, average order value, and regional and channel-based performance.
+
+Product Analysis: 
+
+In-depth look at product performance across categories like street footwear, apparel, and athletic footwear.
+
+Trend Analysis: 
+
+Identification of seasonal demand trends to assist in forecasting and planning.
+
+📂 *Data Description*
+
 Data Sources
 The project uses the following tables:
 
-Sales Table: Contains transaction data including invoice date, sales method, retailer, gender, and metrics such as total sales, operating margin, units sold, and profit.
+Sales Table: 
+
+Contains transaction data including invoice date, sales method, retailer, gender, and metrics such as total sales, operating margin, units sold, and profit.
 Product Image Table: Links product names to image URLs.
 Region Table: Maps locations to cities, states, and regions for detailed geographic analysis.
+
 Columns
+
 Sales Table
+
 gender: Customer gender
 invoice date: Date of purchase
 location key: Identifier for the location
@@ -31,24 +49,45 @@ Region Table
 city, location key, region, state: Geographic identifiers
 Time Period
 Analysis is based on data from 01-01-2020 to 31-12-2021.
-🛠️ Methodology
+
+
+🛠️ *Methodology*
+
 Data Cleaning and Transformation: Clean and join data tables based on keys like location key and product.
 Metric Calculations:
 Year-over-Year (YoY) and Month-over-Month (MoM) changes in sales, profit, units sold, and transactions.
 Average order value and operating margin.
 Visualizations: Created in Power BI across three dashboard pages—Sales Overview, Product Analysis, and Trend Analysis.
-📈 Dashboard Structure
-Sales Overview: KPIs for total sales, profit, and average order value, plus breakdowns by region, channel, and retailer.
-Product Analysis: Visuals on sales and profit by product, product sales trends, and customer demographics.
-Trend Analysis: MoM and YoY trend charts for sales and profit, with seasonal demand insights.
-💡 Insights & Recommendations
-Online Sales Opportunity: Further growth potential in the online channel, where scalability offers high potential ROI.
-Regional High-Value Customers: The West region has the highest average order values, presenting an opportunity for targeted, high-value marketing.
-Product Demand: Street footwear is the top performer, meriting continued investment and potential expansion in this category.
-🖥️ How to Use
-Prerequisites: Power BI Desktop to view and interact with the report.
+
+📈 *Dashboard Structure*
+
+Sales Overview: 
+
+* KPIs for total sales, profit, and average order value, plus breakdowns by region, channel, and retailer.
+
+Product Analysis: 
+
+* Visuals on sales and profit by product, product sales trends, and customer demographics.
+Trend Analysis: 
+
+* MoM and YoY trend charts for sales and profit, with seasonal demand insights.
+
+💡 *Insights & Recommendations*
+
+* Online Sales Opportunity: Further growth potential in the online channel, where scalability offers high potential ROI.
+* Regional High-Value Customers: The West region has the highest average order values, presenting an opportunity for targeted, high-value marketing.
+* Product Demand: Street footwear is the top performer, meriting continued investment and potential expansion in this category.
+
+🖥️ *How to Use*
+
+Prerequisites: 
+
+Power BI Desktop to view and interact with the report.
 Loading the Data:
 Ensure that all tables (Sales, Product Image, and Region) are correctly linked using location key and product.
+
 Exploring the Dashboard:
 Use slicers and filters to drill down into regions, products, and time periods for detailed insights.
 Interpreting Results: Refer to the KPI cards, charts, and visuals to explore key trends and insights highlighted in each page of the dashboard.
+
+
